@@ -1305,8 +1305,8 @@ d()
 	        else if ("loss" == e.final_outcome) p = "I lost the " + v + " election as " + f + ". How would you do?";
 	        else if ("tie" == e.final_outcome) p = "I deadlocked the " + v + " Electoral College as " + f + ". How would you do?";
 			if(e.hasFurtherReading == true){
-				$("#recommended_reading_button").style.display = 'visible';
-			} else $("#recommended_reading_button").style.display = 'none';
+				$("#recommended_reading_button").css('display', 'visible');
+			} else $("#recommended_reading_button").css('display', 'none');
 	        $("#fb_share_button").click(function() {
 	            FB.ui({
 	                display: "popup",
@@ -1339,8 +1339,8 @@ d()
 	            _ = '        <div class="game_header">            <h2>NEW CAMPAIGN TRAIL</h2>        </div>        <div id="main_content_area">          <div id="map_container"></div>            <div id="menu_container">                <div id="overall_result_container">                    <div id="overall_result">                        <h3>ELECTORAL VOTES</h3>                        <ul>' + a + "</ul><p>" + e.election_json[o].fields.winning_electoral_vote_number + ' to win</p>                    </div>                </div>                <div id="state_result_container">                    <div id="state_result">                    <h3>STATE RESULTS</h3>                    <p>Click on a state to view final results.</p>                    </div>                </div>            </div>        </div>        <div id="map_footer">            <button class="final_menu_button" id="overall_results_button">                Final Election Results            </button>            <button class="final_menu_button" id="final_election_map_button" disabled="disabled">                Election Map            </button>            <button class="final_menu_button" id="state_results_button">                Results by State            </button>            <button class="final_menu_button" id="overall_details_button">                Overall Results Details            </button>                        <button class="final_menu_button" id="recommended_reading_button" display="none">                Further Reading            </button>                        <button class="final_menu_button" id="play_again_button">                Play Again!            </button>        </div>';
 	        
 			if(e.hasFurtherReading == true){
-				$("#recommended_reading_button").style.display = 'visible';
-			} else $("#recommended_reading_button").style.display = 'none';
+				$("#recommended_reading_button").css('display', 'visible');
+			} else $("#recommended_reading_button").css('display', 'none');
 			
 			$("#game_window").html(_), $("#map_container").usmap(t), $("#overall_results_button").click(function() {
 	            p()
@@ -1411,8 +1411,8 @@ d()
 	        for (s = 0; s < o.length; s++) g += '<option value="' + (20 + s) + '">Highest ' + o[s].last_name + " %</option>";
 	        var j = '    <div class="game_header">    \t<h2>NEW CAMPAIGN TRAIL</h2>\t</div>\t<div id="main_content_area">\t<div id="results_container">\t\t<h3 class="title_h3">Election Results and Data by State</h3>\t\t<div id="drop_down_area_state">\t\t\t<div id="sort_tab_area">\t\t\t<p>View states by:\t\t\t<select id="sort_tab">\t\t\t<option value="1">Alphabetical</option>\t\t\t<option value="2">Most Electoral Votes</option>\t\t\t<option value="3">Closest States</option>' + m + g + '</select>\t\t\t</p>\t\t\t</div>\t\t\t<div id="state_tab_area">\t\t\t<p>Select a state:\t\t\t<select id="state_tab">' + k(t) + '</select>\t\t\t</p>\t\t\t</div>\t\t</div>\t\t<div id="state_result_data_summary">' + T(t[0].state) + '</div>\t</div>\t<div id="results_container_description">\t</div>\t</div>\t<div id="map_footer">\t\t<button class="final_menu_button" id="overall_results_button">Final Election Results</button>\t\t<button class="final_menu_button" id="final_election_map_button">Election Map</button>\t\t<button class="final_menu_button" id="state_results_button" disabled="disabled">Results by State</button>\t\t<button class="final_menu_button" id="overall_details_button">Overall Results Details</button>\t\t<button class="final_menu_button" id="recommended_reading_button" display="none">\t\tFurther Reading\t\t</button>\t\t<button class="final_menu_button" id="play_again_button">Play Again!</button>\t</div>';
 			if(e.hasFurtherReading == true){
-				$("#recommended_reading_button").style.display = 'visible';
-			} else $("#recommended_reading_button").style.display = 'none';
+				$("#recommended_reading_button").css('display', 'visible');
+			} else $("#recommended_reading_button").css('display', 'none');
 	        $("#game_window").html(j), $("#sort_tab").change(function() {
 	            if (1 == sort_tab.value) var e = k(t);
 	            else if (2 == sort_tab.value) e = k(i);
@@ -1458,8 +1458,8 @@ d()
 	        } else o = "", _ = "";
                 var r=    '<div class="game_header"><h2>NEW CAMPAIGN TRAIL</h2></div> <div id="main_content_area"> <div id="overall_details_container"> <h3>Overall Election Details</h3> <div id="overall_election_details"> <h4>Results - This Game</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr>'+ a +'</table>'+ l +'<br /> <br /> </div> <div id="overall_election_details"> <h4>Results - Historical</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[0]+'; color:'+HistHexcolour[0]+';">----</span>'+ HistName[0]+'</td> <td>'+HistEV[0]+'</td> <td>'+HistPV[0]+'</td> <td>'+HistPVP[0]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+ HistHexcolour[1] +'; color:'+ HistHexcolour[1]+';">----</span>'+HistName[1]+'</td> <td>'+HistEV[1]+'</td> <td>'+HistPV[1]+'</td> <td>'+HistPVP[1]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[2]+'; color:'+HistHexcolour[2]+';">----</span>'+HistName[2]+'</td> <td>'+HistEV[2]+'</td> <td>'+HistPV[2]+'</td> <td>'+HistPVP[2]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[3]+'; color:'+HistHexcolour[3]+';">----</span>'+HistName[3]+'</td> <td>'+HistEV[3]+'</td> <td>'+HistPV[3]+'</td> <td>'+HistPVP[3]+'</td> </tr> </tbody> </table> <br /> <br /> <button class="final_menu_button" onclick="exportResults()">Export Results</button></div></div><div id="map_footer"><button class="final_menu_button" id="overall_results_button">Final Election Results</button>\t\t<button class="final_menu_button" id="final_election_map_button">Election Map</button>\t\t<button class="final_menu_button" id="state_results_button">Results by State</button>\t\t<button class="final_menu_button" id="overall_details_button" disabled="disabled">Overall Results Details</button>\t\t<button class="final_menu_button" id="recommended_reading_button" display="none">Further Reading</button>\t\t<button class="final_menu_button" id="play_again_button">Play Again!</button></div> </div> </div> </div>'
 			if(e.hasFurtherReading == true){
-				$("#recommended_reading_button").style.display = 'visible';
-			} else $("#recommended_reading_button").style.display = 'none';
+				$("#recommended_reading_button").css('display', 'visible');
+			} else $("#recommended_reading_button").css('display', 'none');
 		    $("#game_window").html(r), $("#overall_results_button").click(function() {
 	            p()
 	        }), $("#final_election_map_button").click(function() {
