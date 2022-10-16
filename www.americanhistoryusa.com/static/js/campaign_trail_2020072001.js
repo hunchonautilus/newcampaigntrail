@@ -1320,7 +1320,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            read()
+	            z()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1341,7 +1341,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            read()
+	            z()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1423,7 +1423,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            read()
+	            z()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1445,7 +1445,7 @@ d()
 	            for (i = 0; i < e.historical_overall.length; i++) o += '<tr><td style="text-align: left;">                <span style="background-color: ' + e.historical_overall[i].color_hex + "; color: " + e.historical_overall[i].color_hex + ';">----</span>' + e.historical_overall[i].name + "</td><td>" + e.historical_overall[i].winning_pct.toFixed(2) + "</td><td>" + e.historical_overall[i].electoral_votes_avg.toFixed(1) + "</td><td>" + M(e.historical_overall[i].popular_votes_avg) + "</td><td>" + e.historical_overall[i].popular_vote_pct_avg.toFixed(2) + "</td><td>" + e.historical_overall[i].electoral_votes_min + " - " + e.historical_overall[i].electoral_votes_max + "</td><td>" + M(e.historical_overall[i].popular_votes_min) + " - " + M(e.historical_overall[i].popular_votes_max) + "</td></tr>";
 	            var _ = '<div id="overall_stat_details">            <h4>Historical Results - Your Candidate and Difficulty Level</h4>            <table>            <tr><th>Candidate</th>                <th>Win %</th>                <th>EV Avg.</th>                <th>PV Avg.</th>                <th>PV % Avg.</th>                <th>EV Range</th>                <th>PV Range</th>            </tr>' + o + "</table>            </div>"
 	        } else o = "", _ = "";
-                var r=    '<div class="game_header"><h2>NEW CAMPAIGN TRAIL</h2></div> <div id="main_content_area"> <div id="overall_details_container"> <h3>Overall Election Details</h3> <div id="overall_election_details"> <h4>Results - This Game</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr>'+ a +'</table>'+ l +'<br /> <br /> </div> <div id="overall_election_details"> <h4>Results - Historical</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[0]+'; color:'+HistHexcolour[0]+';">----</span>'+ HistName[0]+'</td> <td>'+HistEV[0]+'</td> <td>'+HistPV[0]+'</td> <td>'+HistPVP[0]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+ HistHexcolour[1] +'; color:'+ HistHexcolour[1]+';">----</span>'+HistName[1]+'</td> <td>'+HistEV[1]+'</td> <td>'+HistPV[1]+'</td> <td>'+HistPVP[1]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[2]+'; color:'+HistHexcolour[2]+';">----</span>'+HistName[2]+'</td> <td>'+HistEV[2]+'</td> <td>'+HistPV[2]+'</td> <td>'+HistPVP[2]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[3]+'; color:'+HistHexcolour[3]+';">----</span>'+HistName[3]+'</td> <td>'+HistEV[3]+'</td> <td>'+HistPV[3]+'</td> <td>'+HistPVP[3]+'</td> </tr> </tbody> </table> <br /> <br /> <button class="final_menu_button" onclick="exportResults()">Export Results</button></div></div><div id="map_footer"><button class="final_menu_button" id="overall_results_button">Final Election Results</button><button class="final_menu_button" id="final_election_map_button">Election Map</button><button class="final_menu_button" id="state_results_button">Results by State</button><button class="final_menu_button" id="overall_details_button" disabled="disabled">Overall Results Details</button><button class="final_menu_button" id="recommended_reading_button">Further Reading</button><button class="final_menu_button" id="play_again_button">Play Again!</button></div> </div> </div> </div>'
+                var r=    '<div class="game_header"><h2>NEW CAMPAIGN TRAIL</h2></div> <div id="main_content_area"> <div id="overall_details_container"> <h3>Overall Election Details</h3> <div id="overall_election_details"> <h4>Results - This Game</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr>'+ a +'</table>'+ l +'<br /> <br /> </div> <div id="overall_election_details"> <h4>Results - Historical</h4> <table> <tbody> <tr> <th>Candidate</th> <th>Electoral Votes</th> <th>Popular Votes</th> <th>Popular Vote %</th> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[0]+'; color:'+HistHexcolour[0]+';">----</span>'+ HistName[0]+'</td> <td>'+HistEV[0]+'</td> <td>'+HistPV[0]+'</td> <td>'+HistPVP[0]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+ HistHexcolour[1] +'; color:'+ HistHexcolour[1]+';">----</span>'+HistName[1]+'</td> <td>'+HistEV[1]+'</td> <td>'+HistPV[1]+'</td> <td>'+HistPVP[1]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[2]+'; color:'+HistHexcolour[2]+';">----</span>'+HistName[2]+'</td> <td>'+HistEV[2]+'</td> <td>'+HistPV[2]+'</td> <td>'+HistPVP[2]+'</td> </tr> <tr> <td style="text-align: left;"><span style="background-color:'+HistHexcolour[3]+'; color:'+HistHexcolour[3]+';">----</span>'+HistName[3]+'</td> <td>'+HistEV[3]+'</td> <td>'+HistPV[3]+'</td> <td>'+HistPVP[3]+'</td> </tr> </tbody> </table> <br /> <br /> <button class="final_menu_button" onclick="exportResults()">Export Results</button></div></div><div id="map_footer"><button class="final_menu_button" id="overall_results_button">Final Election Results</button>\t\t<button class="final_menu_button" id="final_election_map_button">Election Map</button>\t\t<button class="final_menu_button" id="state_results_button">Results by State</button>\t\t<button class="final_menu_button" id="overall_details_button" disabled="disabled">Overall Results Details</button>\t\t<button class="final_menu_button" id="recommended_reading_button">Further Reading</button>\t\t<button class="final_menu_button" id="play_again_button">Play Again!</button></div> </div> </div> </div>'
 		    $("#game_window").html(r), $("#overall_results_button").click(function() {
 	            p()
 	        }), $("#final_election_map_button").click(function() {
@@ -1453,15 +1453,15 @@ d()
 	        }), $("#state_results_button").click(function() {
 	            g()
 	        }), $("#recommended_reading_button").click(function() {
-	            read()
+	            z()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
 	    }
 
-	    function read() {
+	    function z() {
 	  var t = S(e.election_id),
-	  i = '        <div class="game_header">            <h2>THE CAMPAIGN TRAIL</h2>        </div>        <div id="main_content_area_reading">            <h3 class="results_tab_header">Recommended Reading</h3>        <p>Are you interested in exploring the ' + e.election_json[t].fields.year + ' election further?         This page contains some recommended reading to get you up to speed.</p>        <div id="recommended_reading_box">' + e.election_json[t].fields.recommended_reading + '</div>        </div>        <div id="map_footer">                <button class="final_menu_button" id="overall_results_button">                    Final Election Results                </button>                <button class="final_menu_button" id="final_election_map_button">                    Election Map                </button>                <button class="final_menu_button" id="state_results_button">                    Results by State                </button>                <button class="final_menu_button" id="overall_details_button">                    Overall Results Details                </button>                <button class="final_menu_button" id="recommended_reading_button" disabled="disabled">                    Further Reading                </button>                <button class="final_menu_button" id="play_again_button">                    Play Again!                </button>            </div>';
+	  i = '        <div class="game_header">            <h2>NEW CAMPAIGN TRAIL</h2>        </div>        <div id="main_content_area_reading">            <h3 class="results_tab_header">Recommended Reading</h3>        <p>Are you interested in exploring the ' + e.election_json[t].fields.year + ' election further?         This page contains some recommended reading to get you up to speed.</p>        <div id="recommended_reading_box">' + e.election_json[t].fields.recommended_reading + '</div>        </div>        <div id="map_footer">                <button class="final_menu_button" id="overall_results_button">                    Final Election Results                </button>                <button class="final_menu_button" id="final_election_map_button">                    Election Map                </button>                <button class="final_menu_button" id="state_results_button">                    Results by State                </button>                <button class="final_menu_button" id="overall_details_button">                    Overall Results Details                </button>                <button class="final_menu_button" id="recommended_reading_button" disabled="disabled">                    Further Reading                </button>                <button class="final_menu_button" id="play_again_button">                    Play Again!                </button>            </div>';
 	  $('#game_window').html(i),
 	  $('#overall_results_button').click(function () {
 		p()
