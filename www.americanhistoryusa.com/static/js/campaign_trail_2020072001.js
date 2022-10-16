@@ -1320,7 +1320,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            w()
+	            read()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1341,7 +1341,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            w()
+	            read()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1423,7 +1423,7 @@ d()
 	        }), $("#overall_details_button").click(function() {
 	            b()
 	        }), $("#recommended_reading_button").click(function() {
-	            w()
+	            read()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
@@ -1453,13 +1453,13 @@ d()
 	        }), $("#state_results_button").click(function() {
 	            g()
 	        }), $("#recommended_reading_button").click(function() {
-	            w()
+	            read()
 	        }), $("#play_again_button").click(function() {
 	            y()
 	        })
 	    }
 
-	    function w() {
+	    function read() {
 	  var t = S(e.election_id),
 	  i = '        <div class="game_header">            <h2>THE CAMPAIGN TRAIL</h2>        </div>        <div id="main_content_area_reading">            <h3 class="results_tab_header">Recommended Reading</h3>        <p>Are you interested in exploring the ' + e.election_json[t].fields.year + ' election further?         This page contains some recommended reading to get you up to speed.</p>        <div id="recommended_reading_box">' + e.election_json[t].fields.recommended_reading + '</div>        </div>        <div id="map_footer">                <button class="final_menu_button" id="overall_results_button">                    Final Election Results                </button>                <button class="final_menu_button" id="final_election_map_button">                    Election Map                </button>                <button class="final_menu_button" id="state_results_button">                    Results by State                </button>                <button class="final_menu_button" id="overall_details_button">                    Overall Results Details                </button>                <button class="final_menu_button" id="recommended_reading_button" disabled="disabled">                    Further Reading                </button>                <button class="final_menu_button" id="play_again_button">                    Play Again!                </button>            </div>';
 	  $('#game_window').html(i),
